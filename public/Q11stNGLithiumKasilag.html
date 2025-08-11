@@ -2,14 +2,33 @@
 <html>
     <body>
         <script>
-            let age = prompt("Enter your age: ", 15);
-            let maxAge = prompt("You will live until the ripe old age of: ", 930);
-            let numPerDay = prompt("Number of snacks daily: ", 3);
-            let totalRequired = (numPerDay * 365) * (maxAge - age);
-            let sure = confirm("Sure of your numbers?")
-            if (sure) {
-                document.write(`You will need ${totalRequired} slices of bread to last you until the ripe old age of ${maxAge}!`)
-            }
+            //let age = prompt("Enter your age: ", 15);
+            //let maxAge = prompt("You will live until the ripe old age of: ", 930);
+            //let numPerDay = prompt("Number of snacks daily: ", 3);
+            //let totalRequired = (numPerDay * 365) * (maxAge - age);
+            //let sure = confirm("Sure of your numbers?")
+            //if (sure) {
+            //    document.write(`You will need ${totalRequired} slices of bread to last you until the ripe old age of ${maxAge}!<br>Testmsg<br>`)
+            //}
         </script>
+
+        <h1>Feed Me My Snacks</h1>
+        <label> Enter your age
+            <input id="age" />
+        </label><br>
+        <label> Enter your max age
+            <input id="maxAge" />
+        </label><br>
+        <label>Enter number of snacks
+            <input id="snacks">
+        </label><br>
+        <p> Result: 
+            <span id="resultHere"></span>
+        </p>
+        <button> Accept Input</button>
+
+        <!-- -->
+        <script src="script.js"></script>
+
     </body>
 </html>
