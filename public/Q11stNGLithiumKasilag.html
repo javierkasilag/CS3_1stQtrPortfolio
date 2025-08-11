@@ -7,7 +7,10 @@
             let numPerDay = prompt("Number of snacks daily: ", 3);
             let totalRequired = (numPerDay * 365) * (maxAge - age);
             let sure = confirm("Sure of your numbers?")
-            document.write(`You will need ${totalRequired} slices of bread to last you until the ripe old age of ${maxAge}!`)
+            if (sure) {
+                document.write(`You will need ${totalRequired} slices of bread to last you until the ripe old age of ${maxAge}!`)
+            }
+            
         </script>
     </body>
 </html>
